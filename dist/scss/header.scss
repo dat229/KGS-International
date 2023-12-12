@@ -27,6 +27,7 @@ header{
 
     & .content{
         display: flex;
+        margin: 0 auto;
         max-width: 1772px;
         justify-content: space-between;
         align-items: center;
@@ -42,7 +43,7 @@ header{
             li{
                 a{
                     color: var(--secondary-90, #41464B);
-                    // font-family: Avenir Next LT Pro;
+                    font-family: Avenir Next LT Pro;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
@@ -86,6 +87,11 @@ header{
                 border: 1px solid #CDCDCD;
                 background-color: #ffffff;
                 z-index: 1000;
+                display: none;
+
+                &.show-language{
+                    display: block;
+                }
 
                 & > li{
                     display: flex;
@@ -231,6 +237,11 @@ header{
                     border: 1px solid #CDCDCD;
                     background-color: #ffffff;
                     z-index: 1000;
+                    display: none;
+
+                    &.show-language{
+                        display: block;
+                    }
 
                     & > li{
                         display: flex;
@@ -302,7 +313,7 @@ header{
             li{
                 a{
                     color: var(--secondary-90, #41464B);
-                    // font-family: Avenir Next LT Pro;
+                    font-family: Avenir Next LT Pro;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
@@ -342,12 +353,28 @@ header{
         &>i{
             font-size: 50px;
             cursor: pointer;
+
+            @include Res(m-6){
+                font-size: 40px;
+            }
+
+            @include Res(m-4){
+                font-size: 30px;
+            }
         }
     }
 
     &-logo{
+        a{
+            display: flex;
+            justify-content: center;
+        }
         picture{
             width: 70%;
+
+            @include Res(m-7){
+                width: 60%;
+            }
         }
     }
 
@@ -389,6 +416,11 @@ header{
                 border: 1px solid #CDCDCD;
                 background-color: #ffffff;
                 z-index: 1000;
+                display: none;
+
+                &.show-language{
+                    display: block;
+                }
 
                 & > li{
                     display: flex;
@@ -424,7 +456,15 @@ header{
                 gap: 10px;
                 border-radius: 10px;
                 background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
-            
+                
+                @include Res(m-6){
+                    gap: 0;
+                }
+
+                @include Res(m-4){
+                    padding: 4px 8px;
+                }
+
                 &>picture{
                     display: flex;
                     align-items: center;
@@ -440,6 +480,10 @@ header{
                         font-style: normal;
                         font-weight: 600;
                         line-height: 24px;
+
+                        @include Res(m-6){
+                            display: none;
+                        }
                     }
                 }
 
@@ -461,6 +505,18 @@ header{
         gap: 10px;
         transform:translateX(-100%);
         transition: all 0.3s ease-in-out;
+
+        @include Res(m-7){
+            width: 40vw;
+        }
+
+        @include Res(m-6){
+            width: 50vw;
+        }
+
+        @include Res(m-4){
+            width: 60vw;
+        }
 
         &.show{
             transform: translateX(0);
@@ -494,6 +550,12 @@ header{
                 a{
                     display: inline-block;
                     width: 100%;
+                    color: var(--secondary-90, #41464B);
+                    font-family: Avenir Next LT Pro;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
                 }
             }
         }

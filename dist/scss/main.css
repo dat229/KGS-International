@@ -40,7 +40,7 @@
 }
 @font-face {
   font-family: Avenir Next LT Pro;
-  src: url("../font/Font Awesome 6 Solid-900.ttf") format("truetype");
+  src: url("../font/AvenirNextLTPro-Regular.otf") format("truetype");
 }
 @font-face {
   font-family: Lora;
@@ -133,7 +133,7 @@ picture img {
 }
 @font-face {
   font-family: Avenir Next LT Pro;
-  src: url("../font/Font Awesome 6 Solid-900.ttf") format("truetype");
+  src: url("../font/AvenirNextLTPro-Regular.otf") format("truetype");
 }
 @font-face {
   font-family: Lora;
@@ -207,6 +207,7 @@ header li {
 }
 .header .content {
   display: flex;
+  margin: 0 auto;
   max-width: 1772px;
   justify-content: space-between;
   align-items: center;
@@ -219,6 +220,7 @@ header li {
 }
 .header-link .link-menu li a {
   color: var(--secondary-90, #41464B);
+  font-family: Avenir Next LT Pro;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -256,6 +258,10 @@ header li {
   border: 1px solid #CDCDCD;
   background-color: #ffffff;
   z-index: 1000;
+  display: none;
+}
+.header-support-language-list.show-language {
+  display: block;
 }
 .header-support-language-list > li {
   display: flex;
@@ -373,6 +379,10 @@ header li {
   border: 1px solid #CDCDCD;
   background-color: #ffffff;
   z-index: 1000;
+  display: none;
+}
+.header-tablet-top-support-language-list.show-language {
+  display: block;
 }
 .header-tablet-top-support-language-list > li {
   display: flex;
@@ -423,6 +433,7 @@ header li {
 }
 .header-tablet-bot .link-menu li a {
   color: var(--secondary-90, #41464B);
+  font-family: Avenir Next LT Pro;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -456,8 +467,27 @@ header li {
   font-size: 50px;
   cursor: pointer;
 }
+@media only screen and (max-width: 667px) {
+  .header-mobile-icon > i {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-icon > i {
+    font-size: 30px;
+  }
+}
+.header-mobile-logo a {
+  display: flex;
+  justify-content: center;
+}
 .header-mobile-logo picture {
   width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .header-mobile-logo picture {
+    width: 60%;
+  }
 }
 .header-mobile-support {
   display: flex;
@@ -494,6 +524,10 @@ header li {
   border: 1px solid #CDCDCD;
   background-color: #ffffff;
   z-index: 1000;
+  display: none;
+}
+.header-mobile-support-language-list.show-language {
+  display: block;
 }
 .header-mobile-support-language-list > li {
   display: flex;
@@ -521,6 +555,16 @@ header li {
   border-radius: 10px;
   background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
 }
+@media only screen and (max-width: 667px) {
+  .header-mobile-support-vrtour > a {
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-support-vrtour > a {
+    padding: 4px 8px;
+  }
+}
 .header-mobile-support-vrtour > a > picture {
   display: flex;
   align-items: center;
@@ -536,6 +580,11 @@ header li {
   font-weight: 600;
   line-height: 24px;
 }
+@media only screen and (max-width: 667px) {
+  .header-mobile-support-vrtour > a .text span {
+    display: none;
+  }
+}
 .header-mobile-menu {
   position: fixed;
   top: 0;
@@ -550,6 +599,21 @@ header li {
   gap: 10px;
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .header-mobile-menu {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .header-mobile-menu {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-menu {
+    width: 60vw;
+  }
 }
 .header-mobile-menu.show {
   transform: translateX(0);
@@ -577,6 +641,12 @@ header li {
 .header-mobile-menu > ul > li a {
   display: inline-block;
   width: 100%;
+  color: var(--secondary-90, #41464B);
+  font-family: Avenir Next LT Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .header-mobile-menu-contact-list {
   display: flex;

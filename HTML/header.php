@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="../dist/bootstrap5/css/bootstrap-grid5.min.css">
     <link rel="stylesheet" href="../dist/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../dist/css/boxicons.min.css.css">
+    <link rel="stylesheet" href="../dist/css/boxicons.min.css">
     <link rel="stylesheet" href="../dist/js/animate/animate.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -58,7 +58,7 @@
             </div>
             <div class="header-support">
                 <div class="header-support-language">
-                    <button class="header-support-language-button">
+                    <button class="header-support-language-button language-main">
                         <picture>
                             <img src="../dist/image/image 1.png" alt="">
                         </picture>
@@ -67,29 +67,29 @@
                             <i class='bx bx-chevron-down' ></i>
                         </div>
                     </button>
-                    <ul class="header-support-language-list">
-                        <li class="header-support-language-list-item">
+                    <ul class="header-support-language-list language-list">
+                        <li class="header-support-language-list-item language-list-item">
                             <picture>
-                                <img src="../dist/image/image 1.png" alt="">
+                                <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                             </picture>
                             <div class="text">
-                                <span>English</span>
+                                <span  class="language-list-item-text">English</span>
                             </div>
                         </li>
-                        <li class="header-support-language-list-item">
+                        <li class="header-support-language-list-item language-list-item">
                             <picture>
-                                <img src="../dist/image/image 1.png" alt="">
+                                <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                             </picture>
                             <div class="text">
-                                <span>English</span>
+                                <span  class="language-list-item-text">VietNam2</span>
                             </div>
                         </li>
-                        <li class="header-support-language-list-item">
+                        <li class="header-support-language-list-item language-list-item">
                             <picture>
-                                <img src="../dist/image/image 1.png" alt="">
+                                <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                             </picture>
                             <div class="text">
-                                <span>English</span>
+                                <span  class="language-list-item-text">VietNam2</span>
                             </div>
                         </li>
                     </ul>
@@ -110,38 +110,6 @@
     <header class="header-tablet">
         <div class="container">
             <div class="header-tablet-top">
-                <div class="header-tablet-top-contact">
-                    <ul class="header-tablet-top-contact-list">
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/facebook-circle-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/tiktok-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/twitter-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/youtube-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="header-tablet-top-logo"> 
                     <a href="#">
                         <picture>
@@ -151,7 +119,7 @@
                 </div>
                 <div class="header-tablet-top-support">
                     <div class="header-tablet-top-support-language">
-                        <button class="header-tablet-top-support-language-button">
+                        <button class="header-tablet-top-support-language-button language-main">
                             <picture>
                                 <img src="../dist/image/image 1.png" alt="">
                             </picture>
@@ -160,29 +128,29 @@
                                 <i class='bx bx-chevron-down' ></i>
                             </div>
                         </button>
-                        <ul class="header-tablet-top-support-language-list">
-                            <li class="header-tablet-top-support-language-list-item">
+                        <ul class="header-tablet-top-support-language-list language-list">
+                            <li class="header-tablet-top-support-language-list-item language-list-item">
                                 <picture>
-                                    <img src="../dist/image/image 1.png" alt="">
+                                    <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                                 </picture>
                                 <div class="text">
-                                    <span>English</span>
+                                    <span  class="language-list-item-text">English</span>
                                 </div>
                             </li>
-                            <li class="header-tablet-top-support-language-list-item">
+                            <li class="header-tablet-top-support-language-list-item language-list-item">
                                 <picture>
-                                    <img src="../dist/image/image 1.png" alt="">
+                                    <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                                 </picture>
                                 <div class="text">
-                                    <span>English</span>
+                                    <span  class="language-list-item-text">VietNam1</span>
                                 </div>
                             </li>
-                            <li class="header-tablet-top-support-language-list-item">
+                            <li class="header-tablet-top-support-language-list-item language-list-item">
                                 <picture>
-                                    <img src="../dist/image/image 1.png" alt="">
+                                    <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                                 </picture>
                                 <div class="text">
-                                    <span>English</span>
+                                    <span  class="language-list-item-text">VietNam2</span>
                                 </div>
                             </li>
                         </ul>
@@ -240,7 +208,7 @@
             </div>
             <div class="header-mobile-support">
                 <div class="header-mobile-support-language">
-                    <button class="header-mobile-support-language-button">
+                    <button class="header-mobile-support-language-button language-main">
                         <picture>
                             <img src="../dist/image/image 1.png" alt="">
                         </picture>
@@ -249,29 +217,29 @@
                             <i class='bx bx-chevron-down' ></i>
                         </div>
                     </button>
-                    <ul class="header-mobile-support-language-list">
-                        <li class="header-mobile-support-language-list-item">
+                    <ul class="header-mobile-support-language-list language-list">
+                        <li class="header-mobile-support-language-list-item language-list-item">
                             <picture>
-                                <img src="../dist/image/image 1.png" alt="">
+                                <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                             </picture>
                             <div class="text">
-                                <span>English</span>
+                                <span  class="language-list-item-text">English</span>
                             </div>
                         </li>
-                        <li class="header-mobile-support-language-list-item">
+                        <li class="header-mobile-support-language-list-item language-list-item">
                             <picture>
-                                <img src="../dist/image/image 1.png" alt="">
+                                <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                             </picture>
                             <div class="text">
-                                <span>English</span>
+                                <span  class="language-list-item-text">VietNam1</span>
                             </div>
                         </li>
-                        <li class="header-mobile-support-language-list-item">
+                        <li class="header-mobile-support-language-list-item language-list-item">
                             <picture>
-                                <img src="../dist/image/image 1.png" alt="">
+                                <img src="../dist/image/image 1.png" class="language-list-item-image" alt="">
                             </picture>
                             <div class="text">
-                                <span>English</span>
+                                <span  class="language-list-item-text">VietNam2</span>
                             </div>
                         </li>
                     </ul>
@@ -321,38 +289,6 @@
                         <a href="#">Recruitment</a>
                     </li>
                 </ul>
-                <div class="header-mobile-menu-contact">
-                    <ul class="header-mobile-menu-contact-list">
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/facebook-circle-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/tiktok-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/twitter-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <picture>
-                                    <img src="../dist/image/youtube-logo-24.png" alt="">
-                                </picture>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
         
