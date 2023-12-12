@@ -1,0 +1,33 @@
+.banner-home {
+	.slider-banner {
+		.swiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			video {
+				display: block;
+				width: 100%;
+				// position: absolute;
+				left: 0;
+				top: 0;
+				-o-object-fit: fill;
+				object-fit: cover;
+				overflow: hidden;
+				vertical-align: middle;
+			}
+			video.image--detail {
+				min-width: 100%;
+				min-height: 100%;
+			}
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

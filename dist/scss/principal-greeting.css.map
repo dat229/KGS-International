@@ -1,1 +1,7 @@
-{"version":3,"sources":["principal-greeting.scss","principal-greeting.css"],"names":[],"mappings":"AACI;EACI,qBAAA;ACAR;ADGI;EACI,gBAAA;ACDR","file":"principal-greeting.css"}
+{
+"version": 3,
+"mappings": "AACI,2BAAC;EACG,eAAe,EAAE,IAAI;AAGzB,4BAAE;EACE,UAAU,EAAE,IAAI",
+"sources": ["principal-greeting.scss"],
+"names": [],
+"file": "principal-greeting.css"
+}
