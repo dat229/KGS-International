@@ -6,4 +6,40 @@
     li{
         list-style: none;
     }
+
+    .container{
+        gap: 56px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &-image{
+        position: relative;
+
+        &>.text{
+            display: flex;
+            text-align: initial;
+            rotate: 90deg;
+            align-items: end;
+            position: absolute;
+            bottom: 0;
+            width: 80%;
+            height: 60%;
+            border-radius: 4px;
+            background: var(--primary-main, #0D487A);
+        }
+
+        &>picture{
+            width: 90%;
+            position: absolute;
+            z-index: 2;
+            right: 0;
+
+        }
+        
+    }
+
+    &-text{
+        flex: 1;
+    }
 }

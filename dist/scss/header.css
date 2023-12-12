@@ -40,7 +40,7 @@
 }
 @font-face {
   font-family: Avenir Next LT Pro;
-  src: url("../font/AvenirNextLTPro-Cn.otf") format("truetype");
+  src: url("../font/AvenirNextLTPro-Regular.otf") format("truetype");
 }
 @font-face {
   font-family: Lora;
@@ -89,6 +89,46 @@ picture {
 picture img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-family: Lora;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+@media only screen and (max-width: 1199px) {
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 header a {
@@ -573,6 +613,26 @@ header li {
 .banner > picture img {
   height: 20vw;
 }
+@media only screen and (max-width: 991px) {
+  .banner > picture img {
+    height: 25vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner > picture img {
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .banner > picture img {
+    height: 40vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner > picture img {
+    height: 40vw;
+  }
+}
 .banner .text {
   position: absolute;
   left: 0;
@@ -588,8 +648,14 @@ header li {
 .banner .text-top {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
-.banner .text-top li a {
+.banner .text-top li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.banner .text-top li a, .banner .text-top li span {
   color: #FFF;
   font-family: Lora;
   font-size: 16px;
@@ -597,11 +663,19 @@ header li {
   font-weight: 500;
   line-height: 24px;
 }
-.banner .text-bot h3 {
+@media only screen and (max-width: 667px) {
+  .banner .text-top li a, .banner .text-top li span {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner .text-top li a, .banner .text-top li span {
+    font-size: 12px;
+  }
+}
+.banner .text-top li:nth-last-child(1) span {
+  display: none;
+}
+.banner .text-bot h2 {
   color: var(--secondary-white, #FFF);
-  font-family: Lora;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
 }/*# sourceMappingURL=header.css.map */

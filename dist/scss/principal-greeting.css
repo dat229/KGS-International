@@ -3,4 +3,33 @@
 }
 .principal-greeting-about li {
   list-style: none;
+}
+.principal-greeting-about .container {
+  gap: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.principal-greeting-about-image {
+  position: relative;
+}
+.principal-greeting-about-image > .text {
+  display: flex;
+  text-align: initial;
+  rotate: 90deg;
+  align-items: end;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 60%;
+  border-radius: 4px;
+  background: var(--primary-main, #0D487A);
+}
+.principal-greeting-about-image > picture {
+  width: 90%;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.principal-greeting-about-text {
+  flex: 1;
 }/*# sourceMappingURL=principal-greeting.css.map */

@@ -1,0 +1,112 @@
+.mission, .vision{
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+
+.mission{
+
+    .container{
+        display: flex;
+        gap: 36.69px;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 10px 78px;
+    }
+
+    &-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        @include Res(m-9){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include Res(m-4){
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &>picture{
+                width: 44px;
+                height: 44px;
+            }
+
+            & .text{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                &>h4{
+                    color: var(--secondary-90, #41464B);
+                    font-family: Lora;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+.vision{
+    padding: 62px 0 56px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.3;
+        background: #1374C6;
+    }
+
+    .container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        z-index: 2;
+
+        .text{
+            width: 100%;   
+        
+            &>p{
+                display: inline-block;
+                width: 389px;
+                color: var(--secondary-70, #565E64);
+                text-align: center;
+                font-family: Lora;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px; 
+            }
+        }
+
+
+    }
+
+    & > picture{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

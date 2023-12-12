@@ -89,6 +89,63 @@ picture {
 picture img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-family: Lora;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+@media only screen and (max-width: 1199px) {
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+h3 {
+  font-family: Lora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+span {
+  color: var(--secondary-70, #565E64);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @font-face {
@@ -182,6 +239,63 @@ picture {
 picture img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-family: Lora;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+@media only screen and (max-width: 1199px) {
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+h3 {
+  font-family: Lora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+span {
+  color: var(--secondary-70, #565E64);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 header a {
@@ -666,6 +780,26 @@ header li {
 .banner > picture img {
   height: 20vw;
 }
+@media only screen and (max-width: 991px) {
+  .banner > picture img {
+    height: 25vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner > picture img {
+    height: 30vw;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .banner > picture img {
+    height: 40vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner > picture img {
+    height: 40vw;
+  }
+}
 .banner .text {
   position: absolute;
   left: 0;
@@ -681,8 +815,14 @@ header li {
 .banner .text-top {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
-.banner .text-top li a {
+.banner .text-top li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.banner .text-top li a, .banner .text-top li span {
   color: #FFF;
   font-family: Lora;
   font-size: 16px;
@@ -690,13 +830,21 @@ header li {
   font-weight: 500;
   line-height: 24px;
 }
-.banner .text-bot h3 {
+@media only screen and (max-width: 667px) {
+  .banner .text-top li a, .banner .text-top li span {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner .text-top li a, .banner .text-top li span {
+    font-size: 12px;
+  }
+}
+.banner .text-top li:nth-last-child(1) span {
+  display: none;
+}
+.banner .text-bot h2 {
   color: var(--secondary-white, #FFF);
-  font-family: Lora;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
 }
 
 .principal-greeting-about a {
@@ -704,4 +852,129 @@ header li {
 }
 .principal-greeting-about li {
   list-style: none;
+}
+.principal-greeting-about .container {
+  gap: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.principal-greeting-about-image {
+  position: relative;
+}
+.principal-greeting-about-image > .text {
+  display: flex;
+  text-align: initial;
+  rotate: 90deg;
+  align-items: end;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 60%;
+  border-radius: 4px;
+  background: var(--primary-main, #0D487A);
+}
+.principal-greeting-about-image > picture {
+  width: 90%;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.principal-greeting-about-text {
+  flex: 1;
+}
+
+.mission a, .vision a {
+  text-decoration: none;
+}
+.mission li, .vision li {
+  list-style: none;
+}
+
+.mission .container {
+  display: flex;
+  gap: 36.69px;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 10px 78px;
+}
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .mission-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .mission-content {
+    grid-template-columns: 1fr;
+  }
+}
+.mission-content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mission-content-item > picture {
+  width: 44px;
+  height: 44px;
+}
+.mission-content-item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mission-content-item .text > h4 {
+  color: var(--secondary-90, #41464B);
+  font-family: Lora;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.vision {
+  padding: 62px 0 56px;
+  position: relative;
+}
+.vision::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background: #1374C6;
+}
+.vision .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.vision .container .text {
+  width: 100%;
+}
+.vision .container .text > p {
+  display: inline-block;
+  width: 389px;
+  color: var(--secondary-70, #565E64);
+  text-align: center;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+.vision > picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(event){
         var body = $('html,body').scrollTop();
-        if(body > 120){
+        if(body > 100){
             $('.header-tablet').addClass('scroll');
         }
         else {
