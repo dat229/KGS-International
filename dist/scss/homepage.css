@@ -1,0 +1,22 @@
+.banner-home .slider-banner .swiper {
+  width: 100%;
+  height: 100%; }
+.banner-home .slider-banner .swiper-slide video {
+  display: block;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: fill;
+  object-fit: cover;
+  overflow: hidden;
+  vertical-align: middle; }
+.banner-home .slider-banner .swiper-slide video.image--detail {
+  min-width: 100%;
+  min-height: 100%; }
+.banner-home .slider-banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/*# sourceMappingURL=homepage.css.map */
