@@ -43,4 +43,57 @@ $(document).ready(function(){
     });
 
 })
-  
+
+$(document).ready(function(){
+    var language_list = $('.language-list-item');
+
+    language_list.on('click', function() {
+        var languageListContainer = $(this).closest('.language-list');
+    
+        if (languageListContainer.length > 0) {
+            var languageMain = languageListContainer.siblings('.language-main');
+            
+            if (languageMain.length > 0) {
+                var picture_language = $(this).find('picture img').attr('src');
+                var name_language = $(this).find('.language-list-item-text').text();
+    
+                var pictureMain = languageMain.find('picture img')[0];
+                var textMain = languageMain.find('.text span')[0];
+
+                if (pictureMain && textMain) {
+                    pictureMain.src = picture_language;
+                    textMain.textContent = name_language;
+                }
+            }
+        }
+    });
+
+
+    var languageMain = $('.language-main');
+
+    languageMain.on('click', function() {
+        var languageList = $(this).siblings('.language-list');
+
+        if (languageList.length > 0) {
+            var languageListElement = languageList.first();
+            languageListElement.toggleClass('show-language')
+            // if (languageListElement.hasClass('show-language')) {
+            //     languageListElement.removeClass('show-language');
+            // } else {
+            //     languageListElement.addClass('show-language');
+            // }
+        }
+    });
+
+})
+
+// $(document).on('click', function(event) {
+//     var clickedElement = $(event.target);
+
+//     if (!clickedElement.hasClass('show-language') && !clickedElement.hasClass('language-main')
+//     && !clickedElement.hasClass('header-mobile-support-language') && !clickedElement.hasClass('header-tablet-top-support-language')
+//     && !clickedElement.hasClass('header-support-language')) {
+//         console.log("dat")
+//         $('.language-list.show-language').removeClass('show-language');
+//     }
+// });
