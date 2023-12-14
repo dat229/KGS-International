@@ -201,12 +201,12 @@
                             </div>
                         </div>
                         <ul class="detail-info-describe">
-                            <li>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</li>
-                            <li>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</li>
-                            <li>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</li>
-                            <li>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</li>
-                            <li>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</li>
-                            <li>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</li>
+                            <li><span>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</span></li>
+                            <li><span>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</span></li>
+                            <li><span>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</span></li>
+                            <li><span>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</span></li>
+                            <li><span>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</span></li>
+                            <li><span>Bachelor's degree from Edinburgh University and Master's degree from Oxford Brookes University</span></li>
                         </ul>
                     </div>
                 </div>

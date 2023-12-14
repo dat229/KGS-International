@@ -1946,6 +1946,8 @@ header li {
 .pickup-info-child-content .icon {
   width: 32px;
   height: 32px;
+  min-width: 32px;
+  min-height: 32px;
   border: 3px solid #fff;
   border-radius: 50%;
   display: flex;
@@ -1956,15 +1958,29 @@ header li {
   top: 19px;
   cursor: pointer;
 }
+@media only screen and (max-width: 667px) {
+  .pickup-info-child-content .icon {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .pickup-info-child-content .icon {
     right: 16px;
+    top: 10px;
   }
 }
 .pickup-info-child-content .icon i {
   font-size: 25px;
   font-weight: 100;
   color: #ffffff;
+}
+@media only screen and (max-width: 667px) {
+  .pickup-info-child-content .icon i {
+    font-size: 20px;
+  }
 }
 .pickup-info-child-content .title {
   border-radius: var(--8px, 8px) var(--8px, 8px) 0px 0px;
@@ -1974,6 +1990,16 @@ header li {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 667px) {
+  .pickup-info-child-content .title {
+    height: 59px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pickup-info-child-content .title {
+    height: 49px;
+  }
+}
 .pickup-info-child-content .title h4 {
   color: var(--secondary-white, #FFF);
   font-family: Lora;
@@ -1982,10 +2008,35 @@ header li {
   font-weight: 700;
   line-height: 36px;
 }
+@media only screen and (max-width: 667px) {
+  .pickup-info-child-content .title h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .pickup-info-child-content .title h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pickup-info-child-content .title h4 {
+    font-size: 16px;
+  }
+}
 .pickup-info-child-content .detail {
   padding: 24px 18px 40px 40px;
   display: flex;
   gap: 29px;
+}
+@media only screen and (max-width: 667px) {
+  .pickup-info-child-content .detail {
+    gap: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .pickup-info-child-content .detail {
+    gap: 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .pickup-info-child-content .detail {
@@ -1999,12 +2050,12 @@ header li {
 }
 @media only screen and (max-width: 667px) {
   .pickup-info-child-content .detail > picture {
-    width: 50%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 480px) {
   .pickup-info-child-content .detail > picture {
-    width: 60%;
+    width: 50%;
   }
 }
 .pickup-info-child-content .detail-info {
