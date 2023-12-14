@@ -49,6 +49,11 @@
   src: url("../font/Lora-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Haan Cooljazz B;
+  src: url("../font/Cooljazz.ttf") format("truetype");
+}
+
 $Inter-black : Inter-Black, sans-serif;
 $Inter-bold : Inter-Bold, sans-serif;
 $Inter-ExtraBold : Inter-ExtraBold, sans-serif;
@@ -93,6 +98,7 @@ $m-9: 991px;
 $m-7: 768px;
 $m-6: 667px;
 $m-4: 480px;
+$m-3: 320px;
 
 @mixin Res($man) {
   @if $man == m-17 {
@@ -140,6 +146,11 @@ $m-4: 480px;
       @content; 
     } 
   }
+  @else if $man == m-3 {
+    @media only screen and (max-width: $m-3) {
+      @content; 
+    } 
+  }
 }
 
 
@@ -176,6 +187,7 @@ $m-4: 480px;
 
   picture{
     display: flex;
+    // aspect-ratio: 16 / 15;
 
     img{
       width: 100%;
@@ -212,7 +224,7 @@ $m-4: 480px;
     }
 
     @include Res(m-4){
-      font-size: 16px;
+      font-size: 18px;
       line-height: 18px;
     }
   }
@@ -222,7 +234,27 @@ $m-4: 480px;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 48px
+    line-height: 48px;
+
+    @include Res(m-9){
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    @include Res(m-7){
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    @include Res(m-6){
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @include Res(m-4){
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
   
   span{

@@ -1,0 +1,57 @@
+.graduated-info {
+  padding: 100px 0;
+}
+.graduated-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 78px;
+}
+.graduated-info .container picture {
+  aspect-ratio: 16/15;
+}
+.graduated-info .container picture img {
+  border-radius: 10px;
+}
+.graduated-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.graduated-info-content h3 {
+  color: var(--primary-main, #0D487A);
+}
+.graduated-info-content .text {
+  width: 90%;
+}
+
+.graduated-students .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.graduated-students-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.graduated-students-list-item picture {
+  aspect-ratio: 16/15;
+}
+.graduated-students-list-item picture img {
+  border: 5px solid #DCEFFF;
+  border-radius: 4px;
+}
+.graduated-students-list-item .content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.graduated-students-list-item .content h4 {
+  color: var(--primary-main, #0D487A);
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}/*# sourceMappingURL=graduated-students.css.map */

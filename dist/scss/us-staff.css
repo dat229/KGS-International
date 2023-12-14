@@ -1,0 +1,138 @@
+.staff {
+  padding: 100px 0;
+}
+.staff a {
+  text-decoration: none;
+}
+.staff li {
+  list-style: none;
+}
+.staff-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px 20px;
+}
+.staff-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+.staff-list-item .title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+.staff-list-item .title h4 {
+  color: var(--primary-main, #0D487A);
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.pickup-info-child-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 753px;
+  width: 753px;
+  position: fixed;
+  top: 15vh;
+  border-radius: var(--8px, 8px);
+  background: var(--secondary-white, #FFF);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+}
+.pickup-info-child-content .title {
+  border-radius: var(--8px, 8px) var(--8px, 8px) 0px 0px;
+  background: var(--Gradient, linear-gradient(90deg, #0D487A 0%, #0089C3 100%));
+  display: flex;
+  height: 69px;
+  align-items: center;
+  justify-content: center;
+}
+.pickup-info-child-content .title h4 {
+  color: var(--secondary-white, #FFF);
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.pickup-info-child-content .detail {
+  padding: 24px 18px 40px 40px;
+  display: flex;
+  gap: 29px;
+}
+.pickup-info-child-content .detail > picture {
+  width: 30%;
+  display: flex;
+}
+.pickup-info-child-content .detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pickup-info-child-content .detail-info-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pickup-info-child-content .detail-info-title h4 {
+  color: var(--primary-main, #0D487A);
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.pickup-info-child-content .detail-info-title .title span {
+  color: var(--secondary-70, #565E64);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.pickup-info-child-content .detail-info-describe {
+  padding-left: 22px;
+  height: 144px;
+  overflow-y: scroll;
+}
+.pickup-info-child-content .detail-info-describe::-webkit-scrollbar {
+  width: 4px;
+}
+.pickup-info-child-content .detail-info-describe::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  height: 123px;
+  background: var(--secondary-30, #899197);
+  border: none;
+  outline: none;
+}
+.pickup-info-child-content .detail-info-describe::-moz-scrollbar {
+  width: 4px;
+}
+.pickup-info-child-content .detail-info-describe::-moz-scrollbar-thumb {
+  border-radius: 4px;
+  height: 123px;
+  background: var(--secondary-30, #899197);
+  border: none;
+  outline: none;
+}
+.pickup-info-child-content .detail-info-describe > li {
+  list-style: disc;
+}
+.pickup-info-child-gray {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=us-staff.css.map */

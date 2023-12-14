@@ -1,4 +1,27 @@
 .principal-greeting-about{
+    padding: 100px 0;
+
+    @include Res(m-11){
+        padding: 80px 0;
+    }
+
+    @include Res(m-9){
+        padding: 60px 0;
+    }
+
+    @include Res(m-7){
+        padding: 50px 0;
+    }
+
+    @include Res(m-6){
+        padding: 40px 0;
+    }
+    
+    @include Res(m-4){
+        padding: 30px 0;
+    }
+
+
     a{
         text-decoration: none;
     }
@@ -11,29 +34,129 @@
         gap: 56px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @include Res(m-9){
+            gap: 36px;
+        }
+
+        @include Res(m-7){
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        @include Res(m-6){
+            gap: 24px;
+        }
+
+        @include Res(m-4){
+            gap: 16px;
+        }
     }
 
     &-image{
         position: relative;
+        min-height: 705px;
+        height: 705px;
+
+        @include Res(m-11){
+            min-height: 605px;
+            height: 605px;
+        }
+
+        @include Res(m-9){
+            min-height: 450px;
+            height: 450px;
+        }
+
+        @include Res(m-7){
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @include Res(m-4){
+            width: 90%;
+            min-height: 360px;
+            height: 360px;
+        }
+
+        @include Res(m-3){
+            width: 100%;
+            min-height: 300px;
+            height: 300px;
+        }
 
         &>.text{
             display: flex;
-            text-align: initial;
-            rotate: 90deg;
-            align-items: end;
+            align-items: center;
             position: absolute;
-            bottom: 0;
             width: 80%;
-            height: 60%;
+            height: 75%;
+            bottom: 0;
+            left: 0;
             border-radius: 4px;
             background: var(--primary-main, #0D487A);
+
+            & .text-content{
+                display: flex;
+                flex-direction: column;
+                gap: 23px;
+                position: relative;
+                left: 10px;
+
+                @include Res(m-7){
+                    gap: 16px;
+                }
+
+                @include Res(m-4){
+                    gap: 8px;
+                }
+
+                span:nth-child(1){
+                    color: #619BCC;
+                    font-family: Avenir Next LT Pro;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    writing-mode: vertical-lr;
+                    transform: rotate(0deg);
+
+                    @include Res(m-9){
+                        font-size: 14px;
+                    }
+
+                    @include Res(m-4){
+                        font-size: 12px;
+                    }
+                    @include Res(m-3){
+                        font-size: 10px;
+                    }
+                }
+
+                span:nth-child(2){
+                    writing-mode: vertical-lr;
+                    transform: rotate(0deg);
+                    display: inline-block;
+                    width: 2px;
+                    height: 90px;
+                    position: relative;
+                    background: #619BCC;
+                    left: 10px;
+
+                    @include Res(m-9){
+                        height: 60px;
+                        left: 5px;
+                    }
+                }
+            }
         }
 
         &>picture{
             width: 90%;
             position: absolute;
-            z-index: 2;
             right: 0;
+            height: 95%;
 
         }
         
@@ -41,5 +164,68 @@
 
     &-text{
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @include Res(m-11){
+            gap: 40px;
+        }
+        @include Res(m-9){
+            gap: 30px;
+        }
+        @include Res(m-7){
+            gap: 20px;
+        }
+        @include Res(m-4){
+            gap: 10px;
+        }
+
+        & .signature{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 4px;
+
+            h5{
+                color: var(--primary-main, #0D487A);
+                font-family: Lora;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 29px;
+                @include Res(m-6){
+                    font-size: 16px;
+                }
+                @include Res(m-4){
+                    font-size: 14px;
+                }
+            }
+
+            h1{
+                color: var(--secondary-90, #41464B);
+                font-family: Haan Cooljazz B;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+
+                @include Res(m-11){
+                    font-size: 52px;
+                }
+                @include Res(m-9){
+                    font-size: 42px;
+                }
+                @include Res(m-7){
+                    font-size: 32px;
+                }
+                @include Res(m-6){
+                    font-size: 24px;
+                }
+                @include Res(m-4){
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }

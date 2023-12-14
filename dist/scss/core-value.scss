@@ -1,0 +1,261 @@
+.core-value-our, .core-value-info{
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+
+.core-value-our{
+    padding: 97.69px 0 89px;
+    @include Res(m-11){
+        padding: 87.69px 0 79px;
+    }
+    @include Res(m-9){
+        padding: 77.69px 0 69px;
+    }
+    @include Res(m-7){
+        padding: 67.69px 0 59px;
+    }
+    @include Res(m-6){
+        padding: 57.69px 0 49px;
+    }
+    @include Res(m-4){
+        padding: 37.69px 0 39px;
+    }
+
+    .container{
+        display: flex;
+        gap: 62px;
+        align-items: center;
+
+        @include Res(m-9){
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        @include Res(m-7){
+            gap: 30px;
+        }
+    }
+
+    &-title{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include Res(m-11){
+            width: 50%;
+        }
+
+        @include Res(m-9){
+            width: 100%;
+        }
+
+        @include Res(m-7){
+            gap: 10px;
+        }
+
+    }
+
+    &>picture{
+        img{
+            border-radius: var(--8px, 8px);
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+    }
+}
+
+.core-value-info{
+    padding-bottom: 125px;
+    @include Res(m-11){
+        padding-bottom: 100px;
+    }
+    @include Res(m-9){
+        padding-bottom: 80px;
+    }
+    @include Res(m-7){
+        padding-bottom: 60px;
+    }
+    @include Res(m-6){
+        padding-bottom: 50px;
+    }
+    @include Res(m-4){
+        padding-bottom: 40px;
+    }
+
+    &-list{
+        gap: 28px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        @include Res(m-7){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include Res(m-6){
+            gap: 25px;
+        }
+
+        @include Res(m-4){
+            gap: 18px;
+        }
+
+    
+        &-item:nth-child(2){
+            & .icon{
+                background-color: #A3D3F8;
+            }
+
+            .title{
+                h5{
+                    color: #78A5FB;
+                }
+            }
+        }
+
+        &-item:nth-child(3){
+            & .icon{
+                background-color: #A2CCF9;
+            }
+
+            .title{
+                h5{
+                    color: #7DB7F6;
+                }
+            }
+        }
+
+        &-item:nth-child(4){
+            & .icon{
+                background-color: #9EBFFD;
+            }
+
+            .title{
+                h5{
+                    color: #7FC1F5;
+                }
+            }
+        }
+
+        &-item:nth-child(5){
+            & .icon{
+                background-color: #A1B9FB;
+            }
+
+            .title{
+                h5{
+                    color: #7CD1F7;
+                }
+            }
+        }
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            @include Res(m-6){
+                gap: 16px;
+            }
+        
+            @include Res(m-4){
+                gap: 8px;
+            }
+
+            & .icon{
+                aspect-ratio: 1 / 1;
+                background: #A1DEFA;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                p{
+                    color: #FFF;
+                    font-family: Lora;
+                    font-size: 96px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%;
+
+                    @include Res(m-13){
+                        font-size: 70px;
+                    }
+
+                    @include Res(m-11){
+                        font-size: 60px;
+                    }
+
+                    @include Res(m-7){
+                        font-size: 50px;
+                    }
+
+                    @include Res(m-6){
+                        font-size: 40px;
+                    }
+
+                    @include Res(m-4){
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            & .title{
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+
+                @include Res(m-6){
+                    gap: 12px;
+                }
+            
+                @include Res(m-4){
+                    gap: 8px;
+                }
+
+                & > h5{
+                    color: #7195F9;
+                    font-family: Lora;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 36px;
+                    text-align: center;
+
+                    @include Res(m-6){
+                        font-size: 18px;
+                    }
+                
+                    @include Res(m-4){
+                        font-size: 16px;
+                    }
+                }
+
+                & .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    @include Res(m-6){
+                        gap: 12px;
+                    }
+                
+                    @include Res(m-4){
+                        gap: 6px;
+                    }
+
+                    &>p{
+                        background: #DEDEDE;
+                        width: 100%;
+                        display: block;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+    }
+}

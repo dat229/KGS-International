@@ -1,0 +1,108 @@
+.about-history a {
+  text-decoration: none;
+}
+.about-history li {
+  list-style: none;
+}
+
+.about-history {
+  padding: 100px 0;
+}
+.about-history-list-item:nth-child(odd) {
+  display: flex;
+  justify-content: flex-end;
+}
+.about-history-list-item:nth-child(odd):nth-child(1) .content::after {
+  height: 70%;
+}
+.about-history-list-item:nth-child(odd) .content {
+  flex-direction: row-reverse;
+  padding-left: 50px;
+  position: relative;
+}
+.about-history-list-item:nth-child(odd) .content::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 0px;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--secondary-30, #899197);
+}
+.about-history-list-item:nth-child(odd) .content::before {
+  content: "";
+  transform: translateX(-50%);
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid var(--primary-main, #0D487A);
+  background: #fff;
+}
+.about-history-list-item:nth-child(odd) .content .info {
+  flex: 1;
+}
+.about-history-list-item:nth-child(even) {
+  display: flex;
+  justify-content: flex-start;
+}
+.about-history-list-item:nth-child(even) .content {
+  padding-right: 50px;
+  position: relative;
+}
+.about-history-list-item:nth-child(even) .content::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: 0px;
+  transform: translateX(50%);
+  bottom: 0;
+  background-color: var(--secondary-30, #899197);
+}
+.about-history-list-item:nth-child(even) .content::before {
+  content: "";
+  transform: translateX(50%);
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid var(--primary-main, #0D487A);
+  background: #fff;
+}
+.about-history-list-item:nth-child(even) .content .info {
+  align-items: flex-end;
+}
+.about-history-list-item:nth-child(even) .content .info .text span {
+  display: inline-block;
+  text-align: end;
+}
+.about-history-list .content {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+.about-history-list .content picture {
+  width: 60%;
+  min-width: 60%;
+}
+.about-history-list .content picture img {
+  border-radius: 4px;
+}
+.about-history-list .content .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-history-list-item:nth-last-child(1) .content::after {
+  top: 0;
+  height: 20px;
+  bottom: none;
+}/*# sourceMappingURL=about-history.css.map */

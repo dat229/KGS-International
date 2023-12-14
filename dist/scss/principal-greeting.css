@@ -11,24 +11,52 @@
 }
 .principal-greeting-about-image {
   position: relative;
+  min-height: 705px;
 }
 .principal-greeting-about-image > .text {
   display: flex;
-  text-align: initial;
-  rotate: 90deg;
-  align-items: end;
+  align-items: center;
   position: absolute;
-  bottom: 0;
   width: 80%;
-  height: 60%;
+  height: 75%;
+  bottom: 0;
+  left: 0;
   border-radius: 4px;
   background: var(--primary-main, #0D487A);
+}
+.principal-greeting-about-image > .text .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  position: relative;
+  left: 10px;
+}
+.principal-greeting-about-image > .text .text-content span:nth-child(1) {
+  color: #619BCC;
+  font-family: Avenir Next LT Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotate(0deg);
+}
+.principal-greeting-about-image > .text .text-content span:nth-child(2) {
+  writing-mode: vertical-lr;
+  transform: rotate(0deg);
+  display: inline-block;
+  width: 2px;
+  height: 90px;
+  position: relative;
+  background: #619BCC;
+  left: 10px;
 }
 .principal-greeting-about-image > picture {
   width: 90%;
   position: absolute;
-  z-index: 2;
   right: 0;
+  height: 90%;
 }
 .principal-greeting-about-text {
   flex: 1;

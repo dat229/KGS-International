@@ -7,19 +7,19 @@
             <ul class="text-top">
                 <li>
                     <a href="#">Home</a>
-                    <i class='bx bx-chevron-right'></i>
+                    <span>></span>
                 </li>
                 <li>
-                    <a href="#">Home</a>
-                    <i class='bx bx-chevron-right'></i>
+                    <a href="#">About Us</a>
+                    <span>></span>
                 </li>
                 <li>
-                    <a href="#">Home</a>
-                    <i class='bx bx-chevron-right'></i>
+                    <a href="#">Principal’s Greeting</a>
+                    <span>></span>
                 </li>
             </ul>
             <div class="text-bot">
-                <h3>Principal’s Greeting</h3>
+                <h2>Principal’s Greeting</h2>
             </div>
         </div>
     </section>
@@ -28,8 +28,10 @@
         <div class="container">
             <div class="principal-greeting-about-image">
                 <div class="text">
-                    <span>KGS International School</span>
-                    <span></span>
+                    <div class="text-content">
+                        <span>KGS International School</span>
+                        <span></span>
+                    </div>
                 </div>
                 <picture>
                     <img src="../dist/image/Rectangle 202.png" alt="">

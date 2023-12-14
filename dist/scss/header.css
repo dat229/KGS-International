@@ -46,6 +46,10 @@
   font-family: Lora;
   src: url("../font/Lora-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: Haan Cooljazz B;
+  src: url("../font/Cooljazz.ttf") format("truetype");
+}
 @media only screen and (min-width: 1400px) and (max-width: 1920px) {
   .container {
     max-width: 1280px !important;
@@ -126,8 +130,59 @@ h2 {
 }
 @media only screen and (max-width: 480px) {
   h2 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
+  }
+}
+
+h3 {
+  font-family: Lora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+@media only screen and (max-width: 991px) {
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+span {
+  color: var(--secondary-70, #565E64);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media only screen and (max-width: 667px) {
+  span {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  span {
+    font-size: 12px;
   }
 }
 

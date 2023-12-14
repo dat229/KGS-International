@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     $(window).scroll(function(event){
         var body = $('html,body').scrollTop();
-        if(body > 100){
+        if(body > 110){
             $('.header-tablet').addClass('scroll');
         }
         else {
@@ -97,3 +97,33 @@ $(document).ready(function(){
 //         $('.language-list.show-language').removeClass('show-language');
 //     }
 // });
+
+$(document).ready(function(){
+    var swiper = new Swiper(".swiper-graduated-student", {
+        cssMode: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            480: {
+              slidesPerView: 2,
+            //   spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+            //   spaceBetween: 40,
+            },
+            991: {
+              slidesPerView: 4,
+            },
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+})

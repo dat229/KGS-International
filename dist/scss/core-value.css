@@ -1,0 +1,104 @@
+.core-value-our a, .core-value-info a {
+  text-decoration: none;
+}
+.core-value-our li, .core-value-info li {
+  list-style: none;
+}
+
+.core-value-our {
+  padding: 97.69px 89px;
+}
+.core-value-our .container {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+}
+.core-value-our-title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.core-value-our > picture img {
+  border-radius: var(--8px, 8px);
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+}
+
+.core-value-info {
+  padding-bottom: 125px;
+}
+.core-value-info-list {
+  gap: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.core-value-info-list-item:nth-child(2) .icon {
+  background-color: #A3D3F8;
+}
+.core-value-info-list-item:nth-child(2) .title h5 {
+  color: #78A5FB;
+}
+.core-value-info-list-item:nth-child(3) .icon {
+  background-color: #A2CCF9;
+}
+.core-value-info-list-item:nth-child(3) .title h5 {
+  color: #7DB7F6;
+}
+.core-value-info-list-item:nth-child(4) .icon {
+  background-color: #9EBFFD;
+}
+.core-value-info-list-item:nth-child(4) .title h5 {
+  color: #7FC1F5;
+}
+.core-value-info-list-item:nth-child(5) .icon {
+  background-color: #A1B9FB;
+}
+.core-value-info-list-item:nth-child(5) .title h5 {
+  color: #7CD1F7;
+}
+.core-value-info-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.core-value-info-list-item .icon {
+  aspect-ratio: 1/1;
+  background: #A1DEFA;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.core-value-info-list-item .icon p {
+  color: #FFF;
+  font-family: Lora;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.core-value-info-list-item .title {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.core-value-info-list-item .title > h5 {
+  color: #7195F9;
+  font-family: Lora;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+.core-value-info-list-item .title .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.core-value-info-list-item .title .text > p {
+  background: #DEDEDE;
+  width: 100%;
+  display: block;
+  height: 1px;
+}/*# sourceMappingURL=core-value.css.map */
