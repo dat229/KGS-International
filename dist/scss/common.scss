@@ -162,6 +162,9 @@ $m-3: 320px;
       margin: 0 auto !important;
     }
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     margin: 0;
     padding: 0;
@@ -187,6 +190,7 @@ $m-3: 320px;
 
   picture{
     display: flex;
+    // height: fit-content;
     // aspect-ratio: 16 / 15;
 
     img{

@@ -1,0 +1,128 @@
+.fa-question .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 172px;
+  padding: 100px 0;
+}
+.fa-question-left {
+  width: 45.782%;
+}
+.fa-question-left-item {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid #CFCFCF;
+}
+.fa-question-left-item:last-child {
+  border-bottom: 1px solid #CFCFCF;
+}
+.fa-question-left-item .title {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.fa-question-left-item .title h5 {
+  color: var(--Secondary-90, #41464B);
+  font-family: Lora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.fa-question-left-item .title-icon {
+  height: -moz-max-content;
+  height: max-content;
+}
+.fa-question-left-item .title-icon picture {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.fa-question-left-item .title-icon .close-question-d, .fa-question-left-item .title-icon .open-question-d {
+  cursor: pointer;
+}
+.fa-question-left-item .title-icon .close-question-d {
+  display: none;
+}
+.fa-question-left-item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.fa-question-left-item.active .title .close-question-d {
+  display: flex;
+}
+.fa-question-left-item.active .title .open-question-d {
+  display: none;
+}
+.fa-question-left-item.active .content {
+  max-height: 10000px;
+  transition: max-height 0.3s ease-in-out;
+}
+.fa-question-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.fa-question-right-title h4 {
+  color: var(--Primary-Main, #0D487A);
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  width: 60%;
+}
+.fa-question-right-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.fa-question-right-form form div {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.fa-question-right-form form div label {
+  color: var(--Secondary-90, #41464B);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.fa-question-right-form form div span input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #C1C1C1;
+}
+.fa-question-right-form form div textarea {
+  width: 100% !important;
+  height: 200px !important;
+}
+.fa-question-right-form form > input {
+  outline: none;
+  border: none;
+  display: inline-flex;
+  padding: var(--16px, 16px) 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10px;
+  background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
+  color: var(--Secondary-white, #FFF);
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+}/*# sourceMappingURL=ad_FAQ.css.map */

@@ -1,0 +1,207 @@
+.fee-chart{
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+
+.fee-chart{
+    margin: 100px 0;
+    @include Res(m-11){
+        margin: 80px 0;
+    }
+    @include Res(m-9){
+        margin: 60px 0;
+    }
+    @include Res(m-7){
+        margin: 50px 0;
+    }
+    @include Res(m-6){
+        margin: 40px 0;
+    }
+    @include Res(m-4){
+        margin: 30px 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include Res(m-6){
+            gap: 20px;
+        }
+        @include Res(m-4){
+            gap: 10px;
+        }
+    }
+
+    &-content{
+        border-radius: 4px;
+        border: 1px solid var(--Primary-Main, #0D487A);
+        background: var(--Secondary-white, #FFF);
+        
+        & > .title{
+            padding: 16px 50px;
+            border-radius: 4px;
+            background: var(--Primary-Main, #0D487A);
+            @include Res(m-6){
+                padding: 12px 30px;
+            }
+            @include Res(m-4){
+                padding: 6px 20px;
+            }
+
+            h5{
+                color: var(--Secondary-white, #FFF);
+                font-family: Lora;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                @include Res(m-6){
+                    font-size: 16px;
+                }
+                @include Res(m-4){
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 23px;
+            padding: 33px 81px 45px 81px;
+            @include Res(m-7){
+                padding: 22px 51px 35px 51px;
+            }
+            @include Res(m-6){
+                padding: 16px 31px 25px 41px;
+            }
+            @include Res(m-4){
+                padding: 12px 21px 15px 21px;
+            }
+
+            .content-item{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                h5{
+                    font-weight: 600;
+                    color: #000;
+                }
+            }
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 23px;
+            padding: 32px 87px 23px 76px;
+
+            @include Res(m-7){
+                padding: 22px 57px 13px 46px;
+            }
+            @include Res(m-6){
+                padding: 16px 37px 13px 26px;
+            }
+            @include Res(m-4){
+                padding: 12px 27px 8px 16px;
+            }
+
+            .top{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                @include Res(m-13){
+                    gap: 20px;
+                }
+
+                @include Res(m-9){
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                &-text{
+                    width: 660px;
+
+                    @include Res(m-13){
+                        flex: 1;
+                        width: 100%;
+                    }
+                }
+
+                &-button{
+                    display: flex;
+                    gap: 16px;
+                    align-items: center;
+
+                    @include Res(m-4){
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 8px;
+                    }
+
+                    &-detail{
+                        padding: 12px 24px;
+                        border-radius: 10px;
+                        border: 1px solid var(--Linear, #E31F24);
+                        font-family: Lora;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px;
+                        background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        @include Res(m-6){
+                            font-size: 12px;
+                        }
+                        @include Res(m-4){
+                            font-size: 12px;
+                            padding: 8px 16px;
+                        }
+                    }
+
+                    &-download{
+                        padding: 12px 24px;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        border-radius: 10px;
+                        background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
+                        @include Res(m-4){
+                            padding: 8px 16px;
+                        }
+                        .text{
+                            span{
+                                color: var(--Light-10, #FEFEFE);
+                                font-family: Lora;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 20px;
+
+                                @include Res(m-6){
+                                    font-size: 12px;
+                                }
+
+                                @include Res(m-4){
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,319 @@
+.scholarship-banner, .scholarship-download, .scholarship-list{
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+
+.scholarship-banner{
+    position: relative;
+
+    &>picture{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container{
+        position: relative;
+        padding-top: 114px;
+        padding-bottom: 115px;
+        display: flex;
+        gap: 80px;
+        z-index: 1;
+
+        @include Res(m-11){
+            gap: 50px;
+            padding-top: 94px;
+            padding-bottom: 95px;
+        }
+        @include Res(m-9){
+            gap: 30px;
+            padding-top: 74px;
+            padding-bottom: 75px;
+        }
+        @include Res(m-7){
+            flex-direction: column;
+            padding-top: 54px;
+            padding-bottom: 55px;
+        }
+        @include Res(m-6){
+            padding-top: 44px;
+            padding-bottom: 45px;
+        }
+        @include Res(m-4){
+            padding-top: 34px;
+            padding-bottom: 35px;
+        }
+
+        &>picture{
+            flex: 1;
+            width: 100%;
+            height: fit-content;
+
+            @include Res(m-7){
+                display: flex;
+                justify-content: center;
+                
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    &-content{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        @include Res(m-11){
+            gap: 28px;
+        }
+        @include Res(m-9){
+            gap: 18px;
+        }
+        @include Res(m-7){
+            width: 100%;
+        }
+
+        & > span{
+            width: 100%;
+            height: 1px;
+            background: #899197;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            h4{
+                color: var(--Secondary-white, #FFF);
+                font-family: Lora;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 36px;
+                @include Res(m-7){
+                    font-size: 20px;
+                }
+                @include Res(m-6){
+                    font-size: 18px;
+                }
+                @include Res(m-4){
+                    font-size: 16px;
+                }
+            }
+
+            .text{
+                span{
+                    color: var(--Secondary-white, #FFF);
+                }
+            }
+        }
+    }
+
+    & > picture{
+        img{
+            // border-radius: var(--8px, 8px);
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+    }
+}
+
+.scholarship-list{
+    padding: 100px 0;
+    @include Res(m-11){
+        padding: 80px 0;
+    }
+
+    @include Res(m-9){
+        padding: 60px 0;
+    }
+
+    @include Res(m-7){
+        padding: 50px 0;
+    }
+
+    @include Res(m-6){
+        padding: 40px 0;
+    }
+    
+    @include Res(m-4){
+        padding: 30px 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &-item{
+        display: flex;
+        gap: 62px;
+        @include Res(m-7){
+            flex-direction: column;
+        }
+
+        @include Res(m-9){
+            gap: 42px;
+        }
+        @include Res(m-7){
+            gap: 22px;
+        }
+
+        .image{
+            display: flex;
+            gap: 56px;
+            width: 56%;
+
+            @include Res(m-9){
+                gap: 36px;
+            }
+            @include Res(m-7){
+                width: 100%;
+            }
+
+            h5{
+                color: var(--Secondary-90, #41464B);
+                font-family: Lora;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                @include Res(m-7){
+                    font-size: 18px;
+                }
+                @include Res(m-6){
+                    font-size: 16px;
+                }
+                @include Res(m-4){
+                    font-size: 14px;
+                }
+            }
+
+            picture{
+                width: 100%;
+                height: fit-content;
+            }
+        }
+
+        .text{
+            flex: 1;
+        }
+    }
+}
+
+.scholarship-download{
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 65px;
+
+    &>picture{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        img{
+            opacity: 0.3;
+            background: #1374C6;
+        }
+    }
+
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        z-index: 1;
+
+        .title{
+            h5{
+                color: var(--Secondary-90, #41464B);
+                font-family: Lora;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+
+                @include Res(m-7){
+                    font-size: 18px;
+                }
+                @include Res(m-6){
+                    font-size: 16px;
+                }
+                @include Res(m-4){
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .download{
+            display: flex;
+            width: 630px;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--16px, 16px) 32px;
+            border-radius: 4px;
+            background: #F0F7FF;
+
+            @include Res(m-7){
+                width: 530px;
+            }
+            @include Res(m-6){
+                width: 430px;
+            }
+            @include Res(m-4){
+                width: 100%; 
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            &-text{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            &-button{
+                padding: 12px 24px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                border-radius: 10px;
+                background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
+                @include Res(m-4){
+                    padding: 8px 16px;
+                }
+                .text{
+                    span{
+                        color: var(--Light-10, #FEFEFE);
+                        font-family: Lora;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px;
+
+                        @include Res(m-6){
+                            font-size: 12px;
+                        }
+
+                        @include Res(m-4){
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

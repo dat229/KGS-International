@@ -23,7 +23,7 @@
         </div>
     </div>
 </section>
-<section class="core-value-our">
+<section class="core-value-our aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
     <div class="container">
         <div class="core-value-our-title">
             <h3>Our core values</h3>
@@ -38,7 +38,7 @@
         </picture>
     </div>
 </section>
-<section class="core-value-info">
+<section class="core-value-info aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
     <div class="container">
         <ul class="core-value-info-list">
             <li class="core-value-info-list-item">

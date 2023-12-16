@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="../dist/css/boxicons.min.css">
     <link rel="stylesheet" href="../dist/js/animate/animate.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../dist/css/aos.css" />
     <link rel="stylesheet" href="../dist/scss/main.css">
     <script src="../dist/js/jquery.min.js"></script>
     <script src="../dist/js/slick.min.js"></script>
     <script src="../dist/js/jquery.fancybox.min.js"></script>
+    <script src="../dist/bootstrap5/js/bootstrap.bundle.min.js"></script>
     <script src="../dist/js/swiper-bundle.min.js"></script>
     <script src="../dist/js/boxicons.js"></script>
+    <script src="../dist/js/aos.js"></script>
     <script src="../dist/js/main.js"></script>
+    <script src="../dist/js/dat.js"></script>
 </head>
 <body>
     <header class="header">
@@ -293,5 +296,5 @@
         </div>
         
     </header>
-</body>
-</html>
+<!-- </body>
+</html> -->

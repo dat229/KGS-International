@@ -64,6 +64,10 @@
     margin: 0 auto !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -28,116 +28,132 @@
         <div class="about-history-list">
             <div class="about-history-list-item">
                 <div class="content">
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
+                    <div class="content_main aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" >
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-history-list-item">
                 <div class="content">
-                    <picture>
-                        <img src="../dist/image/Rectangle 217.png" alt="">
-                    </picture>
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="about-history-list-item">
-                <div class="content">
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
+                    <div class="content_main aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-history-list-item">
                 <div class="content">
-                    <picture>
-                        <img src="../dist/image/Rectangle 217.png" alt="">
-                    </picture>
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="about-history-list-item">
-                <div class="content">
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
+                    <div class="content_main aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" >
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-history-list-item">
                 <div class="content">
-                    <picture>
-                        <img src="../dist/image/Rectangle 217.png" alt="">
-                    </picture>
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="about-history-list-item">
-                <div class="content">
-                    <picture>
-                        <img src="../dist/image/Rectangle 217.png" alt="">
-                    </picture>
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
+                    <div class="content_main aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-history-list-item">
                 <div class="content">
-                    <picture>
-                        <img src="../dist/image/Rectangle 217.png" alt="">
-                    </picture>
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
+                    <div class="content_main aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" >
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="about-history-list-item">
                 <div class="content">
-                    <picture>
-                        <img src="../dist/image/Rectangle 217.png" alt="">
-                    </picture>
-                    <div class="info">
-                        <h3>2021. 02</h3>
-                        <div class="text">
-                            <span>Jae-ho Yang appointed as the first principal</span>
+                    <div class="content_main aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+            </div>
+            <div class="about-history-list-item">
+                <div class="content">
+                    <div class="content_main aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" >
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-history-list-item">
+                <div class="content">
+                    <div class="content_main aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-history-list-item">
+                <div class="content">
+                    <div class="content_main aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" >
+                        <picture>
+                            <img src="../dist/image/Rectangle 217.png" alt="">
+                        </picture>
+                        <div class="info">
+                            <h3>2021. 02</h3>
+                            <div class="text">
+                                <span>Jae-ho Yang appointed as the first principal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="about-history-line"></div>

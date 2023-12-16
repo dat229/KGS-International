@@ -1,0 +1,283 @@
+.ad-regulation{
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    @include Res(m-7){
+        padding-top: 40px;
+        padding-bottom: 70px;  
+    }
+    @include Res(m-6){
+        padding-top: 30px;
+        padding-bottom: 50px;  
+    }
+    @include Res(m-4){
+        padding-top: 20px;
+        padding-bottom: 40px;  
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    p,i,th,td{
+        color: var(--Secondary-70, #565E64);
+        font-family: Lora;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        
+        @include Res(m-6){
+            font-size: 14px;
+        }
+    
+        @include Res(m-4){
+            font-size: 12px;
+        }
+    }
+
+    .container{
+        .row{
+            
+        }
+    }
+
+    &-left{
+        @include Res(m-4){
+            display: none;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .title{
+                h4{
+                    color: var(--Primary-Main, #0D487A);
+                    font-family: Lora;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+
+                    @include Res(m-7){
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                    @include Res(m-6){
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                    @include Res(m-4){
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                }
+            }
+            .list-group{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                li{
+                    list-style: none;
+                    cursor: pointer;
+                }
+
+                &-item{
+                    display: flex;
+                    text-decoration: none;
+                    color: var(--Secondary-30, #899197);
+                    position: relative;
+                    &::before{
+                        font-size: 22px;
+                        content: '\2022';
+                        color: #899197;
+                        margin-right: 8px; 
+                    }
+
+                    &::after{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        width: 1px;
+                        height: 10px;
+                        background-color: var(--Primary-50, #0D6EFD);
+                    }
+
+                    &.active{
+                        padding: 10px 0px 10px 10px;
+                        border-radius: 4px;
+                        background: #F8F8F8;
+                        color: var(--Primary-50, #0D6EFD);
+
+                        &::before{
+                            color: #0D6EFD;
+                        }
+
+                        &::after{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            width: 1px;
+                            background-color: var(--Primary-50, #0D6EFD);
+                        }
+                    }
+                    @include Res(m-6){
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                    @include Res(m-4){
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-right{
+        @include Res(m-4){
+            width: 100%;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            // display: none;
+
+            // &.show{
+            //     display: flex;
+            // }
+
+            h4{
+                color: var(--Secondary-90, #41464B);
+                font-family: Lora;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 36px; 
+                @include Res(m-7){
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                @include Res(m-6){
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+                @include Res(m-4){
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+
+            .content{
+                span{
+                    display: inline-block;
+                }
+
+                &-list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    ul.disc{
+                        li{
+                            &::before{
+                                font-size: 22px;
+                                content: '\2022';
+                                color: 565e64;
+                                margin-right: 5px; 
+                            }
+                        }
+                    }
+                }
+
+                table{
+                    width: 100%;
+                    border-collapse: collapse;
+                    position: relative;
+
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background: linear-gradient(90deg, #0D487A 0%, #0089C3 100%);
+                        top: 0;
+
+                    }
+                    
+                    tr{
+                        
+                        th:first-child {
+                            width: 80%;
+
+                            @include Res(m-7){
+                                width: 60%;
+                            }
+                            @include Res(m-6){
+                                width: 60%;
+                            }
+                        }
+
+                        th:last-child{
+                            width: 20%;
+                            @include Res(m-7){
+                                width: 40%;
+                            }
+                            @include Res(m-6){
+                                width: 40%;
+                            }
+                        }
+
+                        th{
+                            border: 1px solid #E6E6E6;
+                            background: #F5F9FF;
+                            padding: 24px 10px;
+                            @include Res(m-6){
+                                padding: 16px 8px;
+                            }
+                            @include Res(m-4){
+                                padding: 8px 4px;
+                            }
+                        }
+
+                        td{
+                            border: 1px solid #E6E6E6;;
+                            padding: 24px;
+                            @include Res(m-7){
+                                padding: 20px 10px;
+                            }
+                            @include Res(m-6){
+                                padding: 16px 8px;
+                            }
+                            @include Res(m-4){
+                                padding: 8px 4px;
+                            }
+                        }
+
+                        td:last-child{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .ad-process-right-item{
+            gap: 28px;
+        }
+    }
+}

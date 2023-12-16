@@ -52,12 +52,16 @@
             }
 
             .content{
-                flex-direction: row-reverse;
                 padding-left: 50px;
                 position: relative;
 
-                @include Res(m-7){
-                    flex-direction: column-reverse;
+                &_main{
+                    flex-direction: row-reverse;
+                
+
+                    @include Res(m-7){
+                        flex-direction: column-reverse;
+                    }
                 }
                 @include Res(m-6){
                     padding-left: 40px;
@@ -165,47 +169,50 @@
 
         & .content{
             width: 50%;
+
+            &_main{
             display: flex;
             gap: 20px;
 
-            @include Res(m-7){
-                flex-direction: column-reverse;
-            }
-            @include Res(m-6){
-                gap: 16px;
-            }
-            @include Res(m-4){
-                gap: 10px;
-            }
-
-            picture{
-                width: 60%;
-                min-width: 60%;
-
-                @include Res(m-9){
-                    width: 40%;
-                    min-width: 40%;
-                }
-
                 @include Res(m-7){
-                    width: 100%;
-                    min-width: 100%;
+                    flex-direction: column-reverse;
                 }
-
-                img{
-                    border-radius: 4px;
-                }
-            }
-
-            .info{
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
                 @include Res(m-6){
-                    gap: 12px;
+                    gap: 16px;
                 }
                 @include Res(m-4){
-                    gap: 8px;
+                    gap: 10px;
+                }
+
+                picture{
+                    width: 60%;
+                    min-width: 60%;
+
+                    @include Res(m-9){
+                        width: 40%;
+                        min-width: 40%;
+                    }
+
+                    @include Res(m-7){
+                        width: 100%;
+                        min-width: 100%;
+                    }
+
+                    img{
+                        border-radius: 4px;
+                    }
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    @include Res(m-6){
+                        gap: 12px;
+                    }
+                    @include Res(m-4){
+                        gap: 8px;
+                    }
                 }
                 
             }

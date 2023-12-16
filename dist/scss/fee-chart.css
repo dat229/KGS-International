@@ -1,0 +1,97 @@
+.fee-chart a {
+  text-decoration: none;
+}
+.fee-chart li {
+  list-style: none;
+}
+
+.fee-chart {
+  margin: 100px 0;
+}
+.fee-chart .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.fee-chart-content {
+  border-radius: 4px;
+  border: 1px solid var(--Primary-Main, #0D487A);
+  background: var(--Secondary-white, #FFF);
+}
+.fee-chart-content > .title {
+  padding: 16px 50px;
+  border-radius: 4px;
+  background: var(--Primary-Main, #0D487A);
+}
+.fee-chart-content > .title h5 {
+  color: var(--Secondary-white, #FFF);
+  font-family: Lora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.fee-chart-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 33px 81px 45px 81px;
+}
+.fee-chart-content-info .content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fee-chart-content-info .content-item h5 {
+  font-weight: 600;
+  color: #000;
+}
+.fee-chart-content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 32px 87px 23px 76px;
+}
+.fee-chart-content-list .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fee-chart-content-list .top-text {
+  width: 660px;
+}
+.fee-chart-content-list .top-button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.fee-chart-content-list .top-button-detail {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid var(--Linear, #E31F24);
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fee-chart-content-list .top-button-download {
+  padding: 12px 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--Linear, linear-gradient(90deg, #E31F24 0%, #D30000 100%));
+}
+.fee-chart-content-list .top-button-download .text span {
+  color: var(--Light-10, #FEFEFE);
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}/*# sourceMappingURL=fee-chart.css.map */
