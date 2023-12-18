@@ -2522,17 +2522,30 @@ header li {
 .ad-regulation-right {
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 @media only screen and (max-width: 480px) {
   .ad-regulation-right {
     width: 100%;
   }
 }
+.ad-regulation-right-item:last-child {
+  padding-bottom: 0;
+}
 .ad-regulation-right-item {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 667px) {
+  .ad-regulation-right-item {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ad-regulation-right-item {
+    padding-bottom: 30px;
+  }
 }
 .ad-regulation-right-item h4 {
   color: var(--Secondary-90, #41464B);

@@ -149,12 +149,23 @@
         }
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        //gap : 50px;
+
+        &-item:last-child{
+            padding-bottom: 0;
+        }
 
         &-item{
             display: flex;
             flex-direction: column;
             gap: 12px;
+            padding-bottom: 50px;
+            @include Res(m-6){
+                padding-bottom: 40px;
+            }
+            @include Res(m-4){
+                padding-bottom: 30px;
+            }
             // display: none;
 
             // &.show{
