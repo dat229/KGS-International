@@ -41,6 +41,11 @@
                     </li>
                     <li class="header-link-menu1">
                         <a href="#">Academic</a>
+                        <ul>
+                            <li><a href="#">Academic 1</a></li>
+                            <li><a href="#">Academic 2</a></li>
+                            <li><a href="#">Academic 3</a></li>
+                        </ul>
                     </li>
                     <li class="header-link-menu1">
                         <a href="#">Admissions</a>
@@ -177,6 +182,11 @@
                     </li>
                     <li class="header-link-menu1">
                         <a href="#">Academic</a>
+                        <ul>
+                            <li><a href="#">Academic 1</a></li>
+                            <li><a href="#">Academic 2</a></li>
+                            <li><a href="#">Academic 3</a></li>
+                        </ul>
                     </li>
                     <li class="header-link-menu1">
                         <a href="#">Admissions</a>
@@ -275,6 +285,11 @@
                     </li>
                     <li class="header-link-menu1">
                         <a href="#">Academic</a>
+                        <ul>
+                            <li><a href="#">Academic 1</a></li>
+                            <li><a href="#">Academic 2</a></li>
+                            <li><a href="#">Academic 3</a></li>
+                        </ul>
                     </li>
                     <li class="header-link-menu1">
                         <a href="#">Admissions</a>

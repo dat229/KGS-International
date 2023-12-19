@@ -217,20 +217,48 @@ header li {
   max-width: 1772px;
   justify-content: space-between;
   align-items: center;
-  padding: 22.26px 10px 25.05px;
 }
 .header-link .link-menu {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.header-link .link-menu li a {
+.header-link .link-menu > li {
+  padding: 42px 0;
+  position: relative;
+}
+.header-link .link-menu > li:hover > a {
+  color: #D30000;
+}
+.header-link .link-menu > li:hover > ul {
+  display: block;
+}
+.header-link .link-menu > li a {
   color: var(--secondary-90, #41464B);
   font-family: Avenir Next LT Pro;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.header-link .link-menu > li > ul {
+  display: none;
+  top: 100%;
+  right: 0;
+  position: absolute;
+  z-index: 10000;
+  background: #fff;
+  padding: 12px 32px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 0px 0px 5px 5px;
+}
+.header-link .link-menu > li > ul > li {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 22px;
+}
+.header-link .link-menu > li > ul > li:hover a {
+  color: #D30000;
 }
 .header-support {
   display: flex;
@@ -331,7 +359,6 @@ header li {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -437,13 +464,42 @@ header li {
   gap: 40px;
   justify-content: center;
 }
-.header-tablet-bot .link-menu li a {
+.header-tablet-bot .link-menu > li {
+  padding: 10px 0;
+  position: relative;
+}
+.header-tablet-bot .link-menu > li:hover > a {
+  color: #D30000;
+}
+.header-tablet-bot .link-menu > li:hover > ul {
+  display: block;
+}
+.header-tablet-bot .link-menu > li a {
   color: var(--secondary-90, #41464B);
   font-family: Avenir Next LT Pro;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+.header-tablet-bot .link-menu > li > ul {
+  display: none;
+  top: 100%;
+  right: 0;
+  position: absolute;
+  z-index: 10000;
+  background: #fff;
+  padding: 12px 32px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 0px 0px 5px 5px;
+}
+.header-tablet-bot .link-menu > li > ul > li {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 22px;
+}
+.header-tablet-bot .link-menu > li > ul > li:hover a {
+  color: #D30000;
 }
 
 .header-mobile {
@@ -642,17 +698,56 @@ header li {
   width: 70%;
 }
 .header-mobile-menu > ul > li {
-  padding: 16px 10px;
+  padding: 8px 10px;
 }
-.header-mobile-menu > ul > li a {
+.header-mobile-menu > ul > li > a {
   display: inline-block;
   width: 100%;
   color: var(--secondary-90, #41464B);
   font-family: Avenir Next LT Pro;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  .header-mobile-menu > ul > li > a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-menu > ul > li > a {
+    font-size: 14px;
+  }
+}
+.header-mobile-menu > ul > li > ul > li:last-child {
+  padding: 8px 16px 0;
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-menu > ul > li > ul > li:last-child {
+    padding: 4px 10px 0;
+  }
+}
+.header-mobile-menu > ul > li > ul > li {
+  padding: 8px 16px;
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-menu > ul > li > ul > li {
+    padding: 4px 10px;
+  }
+}
+.header-mobile-menu > ul > li > ul > li > a {
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .header-mobile-menu > ul > li > ul > li > a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-mobile-menu > ul > li > ul > li > a {
+    font-size: 12px;
+  }
 }
 .header-mobile-menu-contact-list {
   display: flex;
