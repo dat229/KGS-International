@@ -64,3 +64,25 @@ $(document).ready(function(){
       });
   
   });
+
+  $(document).ready(function(){
+    var swiper = new Swiper(".swiper-parents", {
+        cssMode: true,
+        slidesPerView: 1,
+        // spaceBetween: 20,
+        breakpoints: {
+            480: {
+              spaceBetween: 0,
+            },
+        },
+        navigation: {
+            nextEl: ".parents-button-next",
+            prevEl: ".parents-button-prev",
+        },
+        pagination: {
+            el: ".parents-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+})

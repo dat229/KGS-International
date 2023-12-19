@@ -115,17 +115,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next">
+                <div class="swiper-button-next students-button-next">
                     <picture>
                         <img src="../dist/image/arrow-right (1).png" alt="">
                     </picture>
                 </div>
-                <div class="swiper-button-prev">
+                <div class="swiper-button-prev students-button-prev">
                     <picture>
                         <img src="../dist/image/arrow-right.png" alt="">
                     </picture>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination students-pagination"></div>
             </div>
         </div>
     </div>

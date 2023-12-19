@@ -90,6 +90,23 @@
 }
 
 .graduated-students{
+    padding-bottom: 100px;
+    @include Res(m-11){
+        padding-bottom: 80px;
+    }
+    @include Res(m-9){
+        padding-bottom: 60px;
+    }
+    @include Res(m-7){
+        padding-bottom: 50px;
+    }
+    @include Res(m-6){
+        padding-bottom: 40px;
+    }
+    @include Res(m-4){
+        padding-bottom: 30px;
+    }
+
     .container{
         text-align: center;
         display: flex;
@@ -167,7 +184,7 @@
         padding-bottom: 42px;
 
         @include Res(m-4){
-            padding: 32px;
+            padding: 32px 0;
         }
     }
 
@@ -181,7 +198,7 @@
         }
 
         @include Res(m-4){
-            transform: translateX(0%);
+            transform: translateX(100%);
         }
     }
     
@@ -195,7 +212,7 @@
         }
 
         @include Res(m-4){
-            transform: translateX(0%);
+            transform: translateX(-100%);
         }
     }
 

@@ -117,11 +117,11 @@ $(document).ready(function(){
             },
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".students-button-next",
+            prevEl: ".students-button-prev",
         },
         pagination: {
-            el: ".swiper-pagination",
+            el: ".students-pagination",
         },
         mousewheel: true,
         keyboard: true,
@@ -139,3 +139,113 @@ $(document).ready(function(){
       });
 
 });
+
+//xử lý hiển thị và chọn giá trị của select ở trang parents
+$(document).ready(function(){
+    $('.time-left-date select').each(function(){
+        var classMonth = "";
+        // if ($(this).attr('id') === 'month_d1'){
+        //     classMonth = mount
+        // }
+        var $this = $(this), numberOfOptions = $(this).children('option').length;
+        
+        $this.addClass('select-hidden'); 
+        $this.wrap('<div class="select"></div>');
+        $this.after('<div class="select-styled"></div>');
+    
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+      
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+      
+        for (var i = 0; i < numberOfOptions; i++) {
+            $('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val(),
+                value : $this.children('option').eq(i).val(),
+                // class: 'text'
+            }).appendTo($list);
+            if ($this.children('option').eq(i).is(':selected')){
+              $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+            }
+        }
+      
+        var $listItems = $list.children('li');
+      
+        $styledSelect.click(function(e) {
+            e.stopPropagation();
+            $('div.select-styled.active').not(this).each(function(){
+                $(this).removeClass('active').next('ul.select-options').hide();
+            });
+            $(this).toggleClass('active').next('ul.select-options').toggle();
+        });
+      
+        $listItems.click(function(e) {
+            e.stopPropagation();
+            $styledSelect.text($(this).text()).removeClass('active');
+            $this.val($(this).attr('rel'));
+            $list.find('li.is-selected').removeClass('is-selected');
+            $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+            $list.hide();
+        });
+      
+        $(document).click(function() {
+            $styledSelect.removeClass('active');
+            $list.hide();
+        });
+    
+    });
+})
+
+// $(document).ready(function(){
+//     function setDays(monthIndex) {
+//         var daysCount = 31;
+//         if(monthIndex=='january' || monthIndex=='march' || monthIndex=='may' ||
+//         monthIndex=='july' || monthIndex=='august' || monthIndex=='october' ||
+//         monthIndex=='december'){
+//             daysCount=31;
+//         }else if(monthIndex=='april' || monthIndex=='june' || monthIndex=='september' ||
+//         monthIndex=='november'){
+//             daysCount = 30;
+//         }  
+//         else{
+//             daysCount = 28;
+//         }
+//         // console.log(daysCount);
+//         var selectDay = $(".time-left-date #day_d1");
+//         // var ulDay = $(".time-left-date-d1 .select-options").eq(0);
+//         // console.log(ulDay.eq(0));
+    
+//         if (selectDay.length > 0) {
+//             // console.log("dat")
+//             var optionCount = selectDay.children('option').length;
+//             // var liCount = ulDay.children('li').length;
+    
+//             if (optionCount < daysCount) {
+//                 for (var i = optionCount; i < daysCount; i++) {
+//                     selectDay.append($("<option></option>")
+//                         .attr("value", i + 1)
+//                         .text(i + 1));
+//                     // liCount.append($("<li></li>")
+//                     //     .rel(i+1)
+//                     //     .attr("value", i + 1)
+//                     //     .text(i + 1));
+//                 }
+//             } else {
+//                 for (var i = daysCount; i < optionCount; i++) {
+//                     selectDay.children('option[value=' + (i + 1) + ']').remove();
+//                     // liCount.children('li[rel=' + (i + 1) + ']').remove();
+//                 }
+//             }
+//         }
+//     }
+
+//     $(".time-left-date .select-options li").each(function(){
+//         $(this).on( "click", function() {
+//             var relValue = $(this).attr("rel");
+//             setDays(relValue);
+//         })
+//     });
+// })

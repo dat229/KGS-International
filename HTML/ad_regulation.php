@@ -26,7 +26,7 @@
 <section class="ad-regulation">
     <div class="container">
         <div class="row">
-            <div class="col-4 ad-regulation-left">
+            <div class="col-3 ad-regulation-left">
                 <div class="content">
                     <div class="title">
                         <h4>Admissions Regulations</h4>
